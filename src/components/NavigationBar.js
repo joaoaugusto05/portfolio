@@ -5,8 +5,6 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
-import { Link } from 'react-router-dom';
-
 export const NavigationBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
@@ -48,9 +46,9 @@ export const NavigationBar = () => {
         </Nav>
         <span className="navbar-text">
           <div className="social-icon">
-            <a href="#"><img src={navIcon1} alt="" /></a>
-            <a href="#"><img src={navIcon2} alt="" /></a>
-            <a href="#"><img src={navIcon3} alt="" /></a>
+            <a href="https://www.google.com"><img src={navIcon1} alt="" /></a>
+            <a href="https://www.google.com"><img src={navIcon2} alt="" /></a>
+            <a href="https://www.google.com"><img src={navIcon3} alt="" /></a>
           </div>
           
             <button className="vvd"><span>Let’s Connect</span></button>

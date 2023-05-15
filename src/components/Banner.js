@@ -1,16 +1,17 @@
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from '../assets/img/header-img.svg';
+import headerImg from '../assets/img/chibiMe.png';
 import { useEffect, useState } from "react"
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setDeleting] = useState(false);
     const [text, setText] = useState('');
-    const period = 1000;
+    const period = 1500;
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const toRotate = ["Coder","Data Engineer", "Web Designer"];
-
+;
     useEffect(() =>{
         let ticker =setInterval(() =>{
             tick();
@@ -26,7 +27,7 @@ export const Banner = () => {
         setText(updatedText);
 
         if(isDeleting){
-            setDelta(prevDelta => prevDelta/2);
+            setDelta(200);
         }
         if(!isDeleting && updatedText === fullText){
             setDeleting(true);
@@ -43,10 +44,10 @@ export const Banner = () => {
                 <Row className="align-items-center">
                 <Col xs = {12} md = {6} xl = {7}>
                     <span className="tagline">
-                        Welcome to my portfolio
+                        Welcome to my portfolio!
                     </span>
 
-                    <h1>{`Hi I'm just a curious `}<br/><span className="wrap">{text.concat('|')}</span></h1>
+                    <h1>{`Hi I'm just a curious `}<br/><span className="wrap">{text}</span><span id="pointer">|</span></h1>
                     <p> Lorem impsum est francheses et je ne sais pas quille faire</p>
                     <button onClick={() => console.log('Conect')}>Let's connect <ArrowRightCircle size = {25}/></button>
                 </Col>

@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: WFTS;
+  src: url('./assets/font/WaitingfortheSunrise-Regular.ttf');
+  font-weight: 700;
+}
+
+@font-face {
   font-family: Centra;
   src: url('./assets/font/CentraNo2-Bold.ttf');
   font-weight: 500;
@@ -48,6 +54,12 @@ h1,h2,h3,h4,h5,h6{
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.Logo{
+  font-family: 'WFTS', sans-serif;
+  font-size: 4vh;
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -273,7 +285,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/banner-bg.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -282,11 +294,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(0, 0, 0, 0.1) -5.91%, rgba(145, 120, 255, 0.2) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .banner h1 {
   font-size: 65px;
@@ -337,4 +350,63 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+/************ Skills Css ************/
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill a{
+  color: inherit;
+}
+.skill-bx {
+  background: #151515;
+  border: 1px solid white;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+/*** Timeline CSS ***/
+.timelineSec{
+  margin-top: -15vh;
+  padding-top: 15vh;
+  background-image:
+    linear-gradient(to bottom, rgb(49, 49, 49), rgba(1, 6, 51, 0.7), rgba(0, 0, 0, 0.4)), url('./assets/img/messy.jpg');
+    background-position: center;
+    background-size: cover;
+  background-attachment: fixed;
+}
+
+.timelineJob{
+  color: rgb(0, 0, 0, 0.6) !important; 
 }
